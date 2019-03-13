@@ -25,7 +25,40 @@ module.exports = {
             use: ['css-loader', 'sass-loader']
           })
       },
-      {test: /\.(pug|jade)$/, loader: 'pug-loader'}
+      {
+        test: /\.(pug|jade)$/,
+        loader: 'pug-loader',
+        options: {
+          pretty: true
+        }
+      },
+      {
+        test: /\.jpe?g$|\.gif$|\.png$|\.wav$|\.ico$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '/img',
+              publicPath: '../img'
+            },  
+          },
+          'img-loader',
+        ]
+      },
+      {
+        test: /\.(eot|svg|ttf|otf|woff|woff2)$/,
+        use: [
+         {
+           loader: 'file-loader',
+           options: {
+            name: '[name].[ext]',
+            outputPath: '/fonts',
+            publicPath: '../fonts'
+           }
+         }
+       ]
+      }
     ]
   },
   plugins: [ 

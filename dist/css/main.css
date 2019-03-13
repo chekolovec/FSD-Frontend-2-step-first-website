@@ -1,2 +1,56 @@
-body {
-  background-color: grey; }
+@charset "UTF-8";
+@font-face {
+  font-family: "MyriadPro-LightSemiExt";
+  src: url(../fonts/MyriadPro-LightSemiExt.otf);
+  font-weight: 800; }
+
+@font-face {
+  font-family: "MyriadPro-Bold.otf";
+    font-family-src: url(../fonts/MyriadPro-Bold.otf); }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.woff") format("woff");
+  src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.profile {
+  width: 50%; }
+  .profile .picture {
+    width: 280px;
+    height: 280px;
+    background: url(../img/profile_pic.png) no-repeat center center;
+    background-size: cover;
+    margin: 0 auto; }
+  .profile .name {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    padding-bottom: 30px; }
+    .profile .name h1 {
+      font-family: ﻿ RobotoRegular;
+      font-weight: normal;
+      font-style: normal; }
+      .profile .name h1 .name__surname {
+        font-family: ﻿MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular; }
+    .profile .name p {
+      font-family: ﻿MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular; }
+  .profile .profile__icon {
+    width: 80px;
+    height: 80px;
+    background: url(../img/profile_icon.png) no-repeat center center;
+    background-size: cover; }
+* {
+  margin: 0;
+  padding: 0; }
+
+.resume {
+  width: 100%;
+  padding-top: 105px; }
+  .resume .container {
+    width: 1650px;
+    height: 1000px;
+    margin: 0 auto; }
