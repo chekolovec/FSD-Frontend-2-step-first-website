@@ -1,0 +1,87 @@
+@import 'fonts'
+@import 'text-settings'
+.profile-block
+	padding-top: 25px
+.block
+	// flex-basis: 38%
+	width: 100%
+	position: relative
+	font-size: 0
+	&__picture
+		width: 325px
+		height: 325px
+		background: url('../img/profile_pic.png') no-repeat center center
+		background-size: cover
+		margin: 0 auto
+	&__name
+		text-align: center
+		padding-top: 33px
+		font-size: 37px
+		padding-bottom: 90px
+		&_firstname
+			font-family: MyriadPro-Regular, sans-serif
+			font-style: normal
+			font-weight: normal
+		&_surname
+			line-height: 70px
+			font-size: 85px
+			font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+		&_position
+			line-height: 67px
+			font-size: 33px
+			font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular	
+	&__icon
+		width: 105px
+		height: 105px
+		display: inline-block
+	.profile-icon
+		background: url('../img/profile_icon.png') no-repeat center center
+		background-size: contain
+		background-color: #fff
+	&__title
+		display: inline-block
+		padding-top: 20px
+		padding-left: 12px
+		padding-right: 10px
+		vertical-align: top	
+		background-color: #fff		
+		&-text
+			font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+			font-size: $main-title__font-size
+			color: $main-title__color
+	&__line
+		position: absolute
+		width: calc(100% - 20px)
+		border-top: 7px solid $main-title__color
+		margin-top: 46px
+		z-index: -1
+		// display: inline-block
+		// border-top: 7px solid $main-title__color
+		// vertical-align: top
+		// margin-top: 47px
+		// margin-left: 4px
+	.profile__line
+		// width: 235px
+	&__info
+		padding-top: 12px
+		padding-right: 15px
+		padding-bottom: 65px
+		&-text
+			font-family: MyriadPro-Regular, sans-serif
+			font-size: 21px
+			line-height: 26px
+			font-weight: 600
+			&_important
+				font-size: 20px
+				line-height: 22px
+				font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+	&__secondary-titles
+		color: $block__secondary-titles-color
+		font-size: $block__secondary-titles-size
+		font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+
+
+
+
+
+
