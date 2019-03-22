@@ -1,11 +1,19 @@
 @charset "UTF-8";
 @font-face {
   font-family: "MyriadPro-Regular";
+  src: url(../fonts/MyriadPro-LightSemiExt.eot);
+  src: url(../fonts/MyriadPro-LightSemiExt.svg);
+  src: url(../fonts/MyriadPro-LightSemiExt.ttf);
+  src: url(../fonts/MyriadPro-LightSemiExt.woff);
   src: url(../fonts/MyriadPro-LightSemiExt.otf); }
 
 @font-face {
   font-family: "MyriadPro-Bold";
-  src: url(../fonts/MyriadPro-Bold.otf); }
+  src: url(../fonts/MyriadPro-Bold.eot);
+  src: url(../fonts/MyriadPro-Bold.otf);
+  src: url(../fonts/MyriadPro-Bold.svg);
+  src: url(../fonts/MyriadPro-Bold.ttf);
+  src: url(../fonts/MyriadPro-Bold.woff); }
 
 .profile-block {
   padding-top: 25px; }
@@ -15,10 +23,8 @@
   position: relative;
   font-size: 0; }
   .block__picture {
-    width: 325px;
+    width: 330px;
     height: 325px;
-    background: url(../img/profile_pic.png) no-repeat center center;
-    background-size: cover;
     margin: 0 auto; }
   .block__name {
     text-align: center;
@@ -79,6 +85,45 @@
     color: #3d6cb0;
     font-size: 28px;
     font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular; }
+
+@media screen and (max-width: 1400px) {
+  .block .block__name {
+    font-size: 30px; }
+    .block .block__name_surname {
+      font-size: 70px; }
+    .block .block__name_position {
+      font-size: 25px; }
+  .block .block__title-text {
+    font-size: 50px; }
+  .block .block__info-text {
+    font-size: 16px; }
+    .block .block__info-text_important {
+      font-size: 15px; }
+  .block .block__secondary-titles {
+    font-size: 23px; } }
+
+@media screen and (max-width: 600px) {
+  .block .block__name {
+    font-size: 20px; }
+    .block .block__name_surname {
+      font-size: 47px; }
+    .block .block__name_position {
+      font-size: 20px; }
+  .block .block__title-text {
+    font-size: 35px; }
+  .block .block__info-text {
+    font-size: 12px; }
+    .block .block__info-text_important {
+      font-size: 11px; }
+  .block .block__secondary-titles {
+    font-size: 18px; }
+  .block__picture {
+    width: 250px;
+    height: 250px; }
+  .block__title {
+    padding-top: 28px; }
+  .block__icon {
+    width: 75px; } }
 * {
   margin: 0;
   padding: 0; }
@@ -100,6 +145,16 @@
       width: 38%; }
     .resume .container .right-wrapper {
       width: 57%; }
+
+@media screen and (max-width: 1100px) {
+  .resume .container .left-wrapper {
+    width: 100%; }
+  .resume .container .right-wrapper {
+    width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .resume .container {
+    width: 100%; } }
 .contacts-block .contacts__line {
   margin-top: 45px; }
 
@@ -138,6 +193,16 @@
       margin-bottom: 42px; }
     .contacts-block .block__secondary-titles_wrapper .block__contact-info-item:last-child {
       margin-bottom: 0; }
+
+@media screen and (max-width: 1400px) {
+  .block.contacts-block .block__secondary-titles_wrapper .block__contact-info {
+    font-size: 22px; } }
+
+@media screen and (max-width: 600px) {
+  .block.contacts-block .block__secondary-titles_wrapper .block__contact-info {
+    font-size: 18px; }
+  .block.contacts-block .contacts-icon {
+    width: 75px; } }
 .skills-block .skills-icon {
   background: url(../img/skills_icon.png) no-repeat center center;
   background-size: contain;
@@ -170,10 +235,8 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: center;
   list-style: none;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: calc(7vh - 2px);
   padding-bottom: 28px; }
   .skills-block .skill-bar-wrapper:nth-child(4) {
     margin-bottom: 35px; }
@@ -182,13 +245,29 @@
     height: 25px;
     border-radius: 50%;
     background-color: #e6e6e6;
-    margin-right: 13px; }
+    margin-right: calc(1vh + 4px); }
     .skills-block .skill-bar-wrapper .bar-point:last-child {
       margin-right: 0; }
-    .skills-block .skill-bar-wrapper .bar-point:first-child {
-      margin-left: -30px; }
   .skills-block .skill-bar-wrapper .filled {
     background-color: #3d6cb0; }
+
+@media screen and (max-width: 1400px) {
+  .block.skills-block .skill-title {
+    font-size: 30px; }
+  .block.skills-block .skill-bar-wrapper {
+    padding-left: 0; } }
+
+@media screen and (max-width: 1100px) {
+  .skills-block .skill-bar-wrapper {
+    justify-content: center; } }
+
+@media screen and (max-width: 600px) {
+  .block.skills-block .skill-title {
+    font-size: 20px; }
+  .block.skills-block .block__skills-title {
+    padding-top: 28px; }
+  .block.skills-block .skills-icon {
+    width: 75px; } }
 @charset "UTF-8";
 .block-wide {
   font-size: 0;
@@ -260,6 +339,38 @@
     padding-bottom: 14px; }
     .education-block__item .secondary-title {
       color: #3d6cb0; }
+
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+  .block-wide .block-wide__title-text {
+    font-size: 50px; }
+  .block-wide .secondary-title {
+    font-size: 30px; }
+  .block-wide .item-name {
+    font-size: 29px; }
+  .block-wide .item-info {
+    font-size: 16px; }
+  .block-wide .block-wide__line {
+    width: calc(100% - 25px); } }
+
+@media screen and (max-width: 1100px) {
+  .block-wide {
+    padding-left: 0; } }
+
+@media screen and (max-width: 600px) {
+  .block-wide .block-wide__title-text {
+    font-size: 35px; }
+  .block-wide .secondary-title {
+    font-size: 20px; }
+  .block-wide .item-name {
+    font-size: 19px; }
+  .block-wide .item-info {
+    font-size: 12px; }
+  .block-wide__title {
+    padding-top: 28px; }
+  .block-wide .block-wide__line {
+    width: calc(100% - 25px); }
+  .block-wide .education-icon {
+    width: 75px; } }
 .experience-block {
   padding-bottom: 52px; }
   .experience-block .experience__line {
@@ -278,6 +389,13 @@
   .experience-block__item {
     padding-left: 75px;
     padding-bottom: 15px; }
+
+@media screen and (max-width: 600px) {
+  .experience-block .experience-title {
+    padding-top: 34px;
+    padding-bottom: 58px; }
+  .experience-block .experience-icon {
+    width: 75px; } }
 .software-block .software-icon {
   background: url(../img/software_icon.png) no-repeat center center;
   background-size: contain;
@@ -334,3 +452,16 @@
       padding-bottom: 14px; }
     .software-block .skillbars__wrapper .skill-item:nth-child(6) .skill-name {
       padding-bottom: 14px; }
+
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+  .block-wide.software-block .skillbars__wrapper .skill-item .skill-name {
+    font-size: 30px; } }
+
+@media screen and (max-width: 600px) {
+  .software-block .block__software-title {
+    padding-top: 34px;
+    padding-bottom: 45px; }
+  .software-block .skillbars__wrapper .skill-item .skill-name {
+    font-size: 20px; }
+  .software-block .software-icon {
+    width: 75px; } }

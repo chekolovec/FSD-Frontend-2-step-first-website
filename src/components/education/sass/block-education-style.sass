@@ -1,0 +1,72 @@
+@import 'text-settings' 
+.block-wide
+	font-size: 0
+	width: 100% //calc(56% + 7px)
+	padding-left: 9vh   // 87px
+	position: relative
+	display: inline-block
+	.block-wide__line
+		position: absolute
+		width: calc(100% - 97px)
+		border-top: 7px solid $main-title__color
+		margin-top: 46px
+		z-index: -1
+	.education-icon
+		background: url('../img/education_icon.png') no-repeat center center
+		background-size: contain
+		width: 103px
+		height: 103px
+		background-color: #fff
+	&__icon
+		display: inline-block
+	&__title
+		display: inline-block
+		vertical-align: top
+		padding-top: 20px
+		padding-left: 27px
+		padding-right: 11px
+		background-color: #fff
+		padding-bottom: 46px
+		&-text
+			font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+			font-size: $main-title__font-size
+			color: $main-title__color
+	.secondary-title
+		font-size: 36px
+		font-family: MyriadPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+		font-weight: 600
+		position: relative
+		&__text
+			padding-left: 14px
+			font-family: MyriadPro-Regular, sans-serif
+			color: black
+		&::before
+			content: ''
+			width: 27px
+			height: 27px
+			background-color: #000
+			position: absolute
+			left: -56px
+			top: 10px
+			border-radius: 50%
+	.item-name
+		font-size: 35px
+		font-weight: 600
+		font-family: MyriadPro-Regular, sans-serif
+		padding-bottom: 10px
+	.item-info
+		font-size: 20px
+		font-family: MyriadPro-Regular, sans-serif
+		font-weight: 600
+		padding-left: 2px
+		line-height: 26px
+.education-block
+	padding-top: 6px
+	padding-bottom: 55px
+	&__item
+		padding-left: 75px
+		padding-bottom: 14px
+		.secondary-title
+			color: $block__secondary-titles-color
+
+@import 'education_media' 

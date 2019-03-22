@@ -1,18 +1,19 @@
 html(lang="en")
 head 
-	meta(charset="UTF-8") 
+	meta(charset="UTF-8")
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	title FSD-Frontend-2-step-first-website
 body
 	.resume
 		.container
 			.left-wrapper
-				include profile
-				include contacts
-				include skills
+				include ../components/profile/profile
+				include ../components/contacts/contacts
+				include ../components/skills/skills
 			.right-wrapper
-				include education
-				include experience
-				include software
+				include ../components/education/education
+				include ../components/experience/experience
+				include ../components/software/software
 
 
 	
